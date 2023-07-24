@@ -1,5 +1,3 @@
-Claro! Aqui está o texto no formato Markdown, adaptado para o GitHub:
-
 ```markdown
 # Projeto de E-commerce - Modelo de Banco de Dados e Consultas SQL
 
