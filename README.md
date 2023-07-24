@@ -1,3 +1,5 @@
+Claro! Aqui está o texto no formato Markdown, adaptado para o GitHub:
+
 ```markdown
 # Projeto de E-commerce - Modelo de Banco de Dados e Consultas SQL
 
@@ -36,11 +38,13 @@ O modelo de banco de dados foi desenvolvido com base nos requisitos do cenário 
 Para executar as consultas SQL e testar o funcionamento do banco de dados, siga as etapas abaixo:
 
 1. Clone este repositório para o seu computador:
+
    ```
    git clone https://github.com/seu-usuario/nome-do-repositorio.git
    ```
 
 2. Importe o arquivo `ecommerce.sql` para criar o banco de dados e as tabelas:
+
    ```
    mysql -u seu-usuario -p < ecommerce.sql
    ```
@@ -50,11 +54,13 @@ Para executar as consultas SQL e testar o funcionamento do banco de dados, siga 
 Exemplos de algumas queries disponíveis:
 
 - Exemplo 1: Recupera todos os clientes do e-commerce:
+
   ```
   SELECT * FROM clients;
   ```
 
 - Exemplo 2: Recupera os produtos disponíveis em estoque na localização 'Loja A':
+
   ```
   SELECT Fname, size, quantity FROM product
   INNER JOIN storageLocation ON product.idProduct = storageLocation.idLproduct
@@ -63,6 +69,7 @@ Exemplos de algumas queries disponíveis:
   ```
 
 - Exemplo 3: Recupera o valor total de pedidos confirmados:
+
   ```
   SELECT SUM(sendValue) AS valor_total_pedidos FROM orders WHERE orderStatus = 'Confirmado';
   ```
